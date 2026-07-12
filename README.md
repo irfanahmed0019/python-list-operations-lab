@@ -1,25 +1,30 @@
 # Python List Operations Lab
 
-A Python practical lab demonstrating **25 list operations** using randomly generated student names with **Faker** and student marks with **NumPy**.
+A Python practical lab that demonstrates **25 list operations** using student names generated with **Faker** and marks created with **NumPy**.
 
-## Concepts Covered
+## Repository
 
+GitHub: https://github.com/irfanahmed0019/python-list-operations-lab
+
+## What this project covers
+
+* List creation
 * List slicing
 * Positive and negative indexing
 * `append()`
 * `insert()`
 * `extend()`
-* Updating list elements
+* Updating list items
 * `len()`
-* Minimum and maximum values
+* `min()` and `max()` on NumPy arrays
 * Sorting
-* Reversing lists
-* Copying lists
+* Reversing
+* Copying
 * `count()`
 * `remove()`
 * `pop()`
 * `del`
-* Converting a NumPy array to a Python list
+* Converting a NumPy array to a list
 
 ## Technologies Used
 
@@ -50,16 +55,16 @@ Activate the virtual environment:
 source .venv/bin/activate
 ```
 
-Install the required packages:
-
-```bash
-pip install numpy Faker
-```
-
-Or install from `requirements.txt`:
+Install packages:
 
 ```bash
 pip install -r requirements.txt
+```
+
+If you want to install manually:
+
+```bash
+pip install numpy Faker
 ```
 
 Run the program:
@@ -91,16 +96,16 @@ Activate the virtual environment:
 .venv\Scripts\activate
 ```
 
-Install the required packages:
-
-```powershell
-pip install numpy Faker
-```
-
-Or install from `requirements.txt`:
+Install packages:
 
 ```powershell
 pip install -r requirements.txt
+```
+
+If you want to install manually:
+
+```powershell
+pip install numpy Faker
 ```
 
 Run the program:
@@ -109,9 +114,11 @@ Run the program:
 python main.py
 ```
 
-## Example
+## Example Output
 
-The program generates student names using Faker and marks using NumPy:
+The program generates six fake student names and a NumPy array of marks, then performs different list operations step by step.
+
+Example setup:
 
 ```python
 import numpy as np
@@ -124,14 +131,16 @@ names = [fake.name() for _ in range(6)]
 marks = np.arange(10, 60, 10)
 ```
 
-A fixed Faker seed is used to make the generated names reproducible across runs.
-
 ## Purpose
 
-This project was created as part of my **Python Application Development Lab** to practice fundamental Python list operations through a simple student-data example.
+This lab was created for practicing Python list operations in a simple student-data format. It helps build confidence with slicing, insertion, deletion, copying, reversing, and list manipulation.
+
+## Note
+
+`Faker.seed(7)` is used so the generated names stay consistent across runs.
 
 ## Author
 
 **Irfan Ahammad J**
 
-GitHub: [@irfanahmed0019](https://github.com/irfanahmed0019)
+GitHub: [irfanahmed0019](https://github.com/irfanahmed0019)
